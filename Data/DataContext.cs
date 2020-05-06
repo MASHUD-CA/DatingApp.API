@@ -10,8 +10,9 @@ namespace DatingApp.API.Data
         // and specify options. Also need to do call into the class are deriving from and its options.
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
-        // tell data context class about our entities. Specify value as type of particular DB set
-        // Values here is table name that gets created waht we scaffold our database
+        // tell data context class about our entities. Value is Class of Modelas, particular DB set
+        // Values is table name that gets created what we scaffold our database
+        // To inform our app about data context Class, make this available as Service [to Startup.cs in ConfiguredServices method]
         public DbSet<Value> Values { get; set; }
 
 
