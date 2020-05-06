@@ -13,14 +13,20 @@ namespace DatingApp.API
     {
         public static void Main(string[] args)
         {
+            // Main method called following method create host builder 
             CreateHostBuilder(args).Build().Run();
         }
 
+        // Following method configure some default. When we start app its going to tell her
+        // application to use this thing called a Kestrel web server thats the web server
+        // its provided by dot net core thats hosting our API & its going to configure some degfault as well.
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+        // above method does logging, logging has been configured inside this particular method
+        // & read configuration files that contain our application settings.
     }
 }
