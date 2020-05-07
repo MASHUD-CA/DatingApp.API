@@ -5,6 +5,7 @@
   <ItemGroup>&#xD;
   </ItemGroup>
   <ItemGroup>
+  <!-- Inside Packagereferences following automatically added by nuget or we can do Manually -->
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.0.0"/>
   </ItemGroup>
